@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <title>Formulário</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="form-image">
+        <img src="/assets/img/form.svg" alt="Banner" />
+      </div>
+      <div class="form">
+        <form>
+          <div class="form-header">
+            <div class="title">
+              <h1>Cadastrar</h1>
+            </div>
+            <div class="login-button">
+              <button><a href="#">Entrar</a></button>
+            </div>
+          </div>
+          <div class="input-group">
+            <div class="input-box">
+              <label for="name">Nome</label>
+              <input
+                type="text"
+                id="name"
+                name="Nome"
+                placeholder="Nome"
+                required
+              />
+              <span id="name-error" class="error-message"></span>
+            </div>
+
+            <div class="input-box">
+              <label for="surname">Sobrenome</label>
+              <input
+                type="text"
+                id="surname"
+                name="Sobrenome"
+                placeholder="Sobrenome"
+                required
+              />
+              <span id="surname-erro" class="error-message"></span>
+            </div>
+
+            <div class="input-box">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="Email"
+                placeholder="Email"
+                required
+              />
+              <span id="email-error" class="error-message"></span>
+            </div>
+
+            <div class="input-box">
+              <label for="phone">Celular</label>
+              <input
+                type="tel"
+                id="phone"
+                name="Celular"
+                placeholder="Celular"
+                required
+              />
+              <span id="phone-error" class="error-message"></span>
+            </div>
+
+            <div class="input-box">
+              <label for="password">Senha</label>
+              <input
+                type="password"
+                id="password"
+                name="Senha"
+                placeholder="Senha"
+                required
+              />
+              <span id="password-erro" class="error-message"></span>
+            </div>
+
+            <div class="input-box">
+              <label for="confirmPassword">Confirmar Senha</label>
+              <input
+                type="password"
+                id="confirmPassword"
+                name="Confirmar Senha"
+                placeholder="Confirmar Senha"
+                required
+              />
+              <span id="confirmPassword-error" class="error-message"></span>
+            </div>
+          </div>
+
+          <div class="buttons">
+            <button type="submit" value="Send" name="Continuar">
+              <a href="#">Continuar</a>
+            </button>
+            <button type="reset" value="Reser" name="Limpar">
+              <a href="#">Limpar</a>
+            </button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <script src="/assets/js/script.js"></script>
+  </body>
+</html>
