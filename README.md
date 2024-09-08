@@ -12,6 +12,6 @@
 <h1>Rodar Localmente</h1>
 <p>Para executar o pojeto localmente, siga o passo a baixo:</p>
 <h3>Clone o Projeto</h3>
-<pre>git clone </pre>
+<pre>git clone https://github.com/LucasStorck/FormularioDeCadastro.git</pre>
 
 <p align="center"> - Desenvolvido por <b>Lucas Storck</b></p>
