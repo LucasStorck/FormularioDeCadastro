@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <title>Sucesso</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="form">
+        <div class="form-header">
+          <div class="title">
+            <h1 id="success-msg">Operação realizada com sucesso!</h1>
+          </div>
+        </div>
+        <div class="buttons" style="margin-top: 2rem;">
+          <button onclick="window.location.href='/login.html'">Ir para Login</button>
+          <br><br>
+          <button onclick="window.location.href='/index.html'">Página Inicial</button>
+        </div>
+      </div>
+    </main>
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const msg = urlParams.get('msg');
+      if (msg) {
+        document.getElementById('success-msg').innerText = msg;
+      }
+    </script>
+  </body>
+</html>

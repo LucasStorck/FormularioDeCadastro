@@ -12,22 +12,19 @@
         <img src="/assets/img/form.svg" alt="Banner" />
       </div>
       <div class="form">
-        <form>
+        <form action="/register" method="POST">
           <div class="form-header">
             <div class="title">
               <h1>Cadastrar</h1>
             </div>
-            <div class="login-button">
-              <button><a href="#">Entrar</a></button>
-            </div>
           </div>
           <div class="input-group">
             <div class="input-box">
-              <label for="name">Nome</label>
+              <label for="name">Nome Completo</label>
               <input
                 type="text"
                 id="name"
-                name="Nome"
+                name="name"
                 placeholder="Nome"
                 required
               />
@@ -35,23 +32,11 @@
             </div>
 
             <div class="input-box">
-              <label for="surname">Sobrenome</label>
-              <input
-                type="text"
-                id="surname"
-                name="Sobrenome"
-                placeholder="Sobrenome"
-                required
-              />
-              <span id="surname-erro" class="error-message"></span>
-            </div>
-
-            <div class="input-box">
               <label for="email">Email</label>
               <input
                 type="email"
                 id="email"
-                name="Email"
+                name="email"
                 placeholder="Email"
                 required
               />
@@ -59,23 +44,11 @@
             </div>
 
             <div class="input-box">
-              <label for="phone">Celular</label>
-              <input
-                type="tel"
-                id="phone"
-                name="Celular"
-                placeholder="Celular"
-                required
-              />
-              <span id="phone-error" class="error-message"></span>
-            </div>
-
-            <div class="input-box">
               <label for="password">Senha</label>
               <input
                 type="password"
                 id="password"
-                name="Senha"
+                name="password"
                 placeholder="Senha"
                 required
               />
@@ -87,7 +60,7 @@
               <input
                 type="password"
                 id="confirmPassword"
-                name="Confirmar Senha"
+                name="confirmPassword"
                 placeholder="Confirmar Senha"
                 required
               />
@@ -97,11 +70,14 @@
 
           <div class="buttons">
             <button type="submit" value="Send" name="Continuar">
-              <a href="#">Continuar</a>
+              Continuar
             </button>
-            <button type="reset" value="Reser" name="Limpar">
-              <a href="#">Limpar</a>
+            <button type="reset" value="Reset" name="Limpar">
+              Limpar
             </button>
+          </div>
+          <div class="switch-form" style="text-align: center; margin-top: 1.5rem;">
+            <span style="color: #e6e6e6; font-size: 0.9rem;">Já tem uma conta? <a href="/login.html" style="color: #fff; font-weight: bold; text-decoration: underline;">Entrar</a></span>
           </div>
         </form>
       </div>

@@ -18,9 +18,13 @@ body {
 
 .container {
   width: 80%;
-  height: 80vh;
+  max-width: 1000px;
+  height: auto;
+  min-height: 50vh;
   display: flex;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .form-image {
@@ -33,7 +37,8 @@ body {
 }
 
 .form-image img {
-  width: 31rem;
+  width: 100%;
+  max-width: 28rem;
 }
 
 .form {
@@ -44,6 +49,10 @@ body {
   align-items: center;
   background-color: #142ba8;
   padding: 3rem;
+}
+
+.form form {
+  width: 100%;
 }
 
 .form-header {
@@ -98,18 +107,19 @@ body {
 
 .input-group {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: column;
   padding: 1rem 0;
 }
 
 .input-box {
+  width: 100%;
   display: flex;
   flex-direction: column;
   margin-bottom: 1.1rem;
 }
 
 .input-box input {
+  width: 100%;
   margin: 0.6rem 0;
   padding: 0.8rem 1.2rem;
   border: none;
@@ -189,10 +199,9 @@ body {
   .input-group {
     flex-direction: column;
     z-index: 5;
-    padding-right: 5rem;
-    max-height: 10rem;
-    overflow-y: scroll;
-    flex-wrap: nowrap;
+    padding-right: 0;
+    max-height: none;
+    overflow-y: visible;
   }
   .gender-inputs {
     margin-top: 2rem;

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <title>Erro</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="form">
+        <div class="form-header">
+          <div class="title">
+            <h1 style="color: #ff4d4d;">Ocorreu um Erro</h1>
+          </div>
+        </div>
+        <p id="error-msg" style="color: #fff; font-size: 1.2rem; text-align: center; margin-top: 1rem;">Ocorreu um erro desconhecido.</p>
+        <div class="buttons" style="margin-top: 2rem;">
+          <button onclick="window.history.back()">Voltar</button>
+        </div>
+      </div>
+    </main>
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const msg = urlParams.get('msg');
+      if (msg) {
+        document.getElementById('error-msg').innerText = msg;
+      }
+    </script>
+  </body>
+</html>

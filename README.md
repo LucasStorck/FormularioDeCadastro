@@ -10,8 +10,18 @@
   <li>CSS</li>
 </ul>
 <h1>Rodar Localmente</h1>
-<p>Para executar o pojeto localmente, siga o passo a baixo:</p>
-<h3>Clone o Projeto</h3>
-<pre>git clone https://github.com/LucasStorck/FormularioDeCadastro.git</pre>
+<p>Para executar o projeto localmente, siga os passos abaixo:</p>
+<h3>1. Clone o Projeto</h3>
+<pre>git clone https://github.com/LucasStorck/FormularioDeCadastro.git
+cd FormularioDeCadastro</pre>
 
+<h3>2. Instale as dependências</h3>
+<p>É necessário ter o Node.js instalado na sua máquina.</p>
+<pre>npm install</pre>
+
+<h3>3. Execute o servidor</h3>
+<pre>node server.js</pre>
+<p>Após isso, acesse <a href="http://localhost:3000" target="_blank">http://localhost:3000</a> no seu navegador.</p>
+
+<br>
 <p align="center"> - Desenvolvido por <b>Lucas Storck</b></p>
