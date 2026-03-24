@@ -15,7 +15,7 @@ exports.registerUser = (req, res) => {
         return res.redirect("/error.html?msg=E-mail já está em uso.");
       }
       console.error(err.message);
-      return res.redirect("/error.html?msg=Erro ao registrar o usuário.");
+      return res.redirect(`/error.html?msg=Erro ao registrar o usuário: ${err.message}`);
     }
     res.redirect("/success.html?msg=Cadastro realizado com sucesso!");
   });
