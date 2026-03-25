@@ -3,7 +3,6 @@ const db = require("../config/database");
 exports.registerUser = (req, res) => {
   const { name, email, password } = req.body;
 
-  // Server-side validation
   if (!name || !email || !password) {
     return res.redirect("/error.html?msg=Todos os campos são obrigatórios.");
   }
@@ -15,7 +14,9 @@ exports.registerUser = (req, res) => {
         return res.redirect("/error.html?msg=E-mail já está em uso.");
       }
       console.error(err.message);
-      return res.redirect(`/error.html?msg=Erro ao registrar o usuário: ${err.message}`);
+      return res.redirect(
+        `/error.html?msg=Erro ao registrar o usuário: ${err.message}`,
+      );
     }
     res.redirect("/success.html?msg=Cadastro realizado com sucesso!");
   });
